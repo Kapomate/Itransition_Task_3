@@ -67,7 +67,7 @@ namespace Task3
                 }
                 int hmnchoice = Convert.ToInt32(input);
 
-                if (hmnchoice > 0 && hmnchoice < args.Length)
+                if (hmnchoice > 0 && hmnchoice <= args.Length)
                 {
                     var game = new Game(table.GetTable(), cmpchoice, hmnchoice);
                     Console.WriteLine($"Your move: {args[hmnchoice - 1]}");
